@@ -73,8 +73,15 @@ export default function Skills({ onFilter }: SkillsProps) {
     )
   }, [])
 
-  const getRandomColorClass = () => {
-    return colorClasses[Math.floor(Math.random() * colorClasses.length)]
+  // Deterministic color assignment based on skill name
+  const getColorClass = (skill: string, index: number) => {
+    // Use a simple hash of the skill name to ensure consistent colors
+    let hash = 0
+    for (let i = 0; i < skill.length; i++) {
+      hash = skill.charCodeAt(i) + ((hash << 5) - hash)
+    }
+    const colorIndex = Math.abs(hash) % colorClasses.length
+    return colorClasses[colorIndex]
   }
 
   const handleSkillClick = (skill: string) => {
@@ -100,9 +107,9 @@ export default function Skills({ onFilter }: SkillsProps) {
             <div className="flex flex-wrap gap-3 justify-center">
               {skills.map((skill, index) => (
                 <button
-                  key={index}
+                  key={skill}
                   onClick={() => handleSkillClick(skill)}
-                  className={`skill-tag px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 cursor-pointer ${getRandomColorClass()}`}
+                  className={`skill-tag px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 cursor-pointer ${getColorClass(skill, index)}`}
                   aria-label={`Filter projects by ${skill}`}
                 >
                   {skill}

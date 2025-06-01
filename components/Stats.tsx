@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { Users, TrendingUp, Clock, Award } from "lucide-react"
+import { Users, Award, Calendar, GitCommit } from "lucide-react"
 import { gsap } from "gsap"
 
 const statsData = [
@@ -13,25 +13,25 @@ const statsData = [
     color: "text-blue-600",
   },
   {
-    label: "Search Relevance Improvement",
-    value: 35,
-    suffix: "%",
-    icon: TrendingUp,
-    color: "text-green-600",
-  },
-  {
-    label: "Processing Time Reduction",
-    value: 40,
-    suffix: "%",
-    icon: Clock,
-    color: "text-purple-600",
-  },
-  {
     label: "Hackathon Participated",
-    value: 4,
+    value: 8,
     suffix: "x",
     icon: Award,
     color: "text-amber-600",
+  },
+  {
+    label: "Years of Experience",
+    value: 3,
+    suffix: "",
+    icon: Calendar,
+    color: "text-purple-600",
+  },
+  {
+    label: "Number of Commits",
+    value: 999,
+    suffix: "+",
+    icon: GitCommit,
+    color: "text-green-600",
   },
 ]
 

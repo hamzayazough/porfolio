@@ -84,46 +84,46 @@ export default function Home() {
 
   return (
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-      <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300 overflow-x-hidden max-w-[100vw]">
+      <div className="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
         <Navigation />
 
         {isCommandPaletteOpen && <CommandPalette onClose={() => setIsCommandPaletteOpen(false)} />}
 
-        <main className="overflow-x-hidden">
-          <section id="hero" className="min-h-screen overflow-x-hidden">
+        <main>
+          <section id="hero" className="min-h-screen">
             <Hero />
           </section>
 
-          <section id="about" className="min-h-screen py-20 overflow-x-hidden">
+          <div id="about" className="py-20">
             <About />
-          </section>
+          </div>
 
-          <section id="skills" className="min-h-screen py-20 overflow-x-hidden">
+          <div id="skills" className="py-20">
             <Skills onFilter={filterProjects} />
-          </section>
+          </div>
 
-          <section id="timeline" className="min-h-screen py-20 overflow-x-hidden">
+          <div id="timeline" className="py-20">
             <Timeline />
-          </section>
+          </div>
 
-          <section id="projects" className="min-h-screen py-20 overflow-x-hidden">
+          <div id="projects" className="py-20">
             <Projects filter={projectFilter} />
-          </section>
+          </div>
 
-          <section id="stats" className="py-20 overflow-x-hidden">
+          <div id="stats" className="py-20">
             <Stats />
-          </section>
+          </div>
 
-          <section id="fitness" className="py-20 overflow-x-hidden">
+          <div id="fitness" className="py-20">
             <Fitness />
-          </section>
+          </div>
 
-          <section id="contact" className="py-20 overflow-x-hidden">
+          <div id="contact" className="py-20">
             <Contact />
-          </section>
+          </div>
         </main>
 
-        <footer className="py-8 text-center text-sm text-slate-500 dark:text-slate-400 overflow-x-hidden">
+        <footer className="py-8 text-center text-sm text-slate-500 dark:text-slate-400">
           <p>© {new Date().getFullYear()} Hamza Yazough. All rights reserved.</p>
         </footer>
       </div>
