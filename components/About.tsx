@@ -125,7 +125,7 @@ export default function About() {
           <div className="about-image order-1 lg:order-2 relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl transform hover:rotate-2 transition-transform duration-500">
               <img
-                src="/placeholder.svg?height=600&width=600"
+                src="/image.png?height=600&width=600"
                 alt="Hamza Yazough"
                 className="w-full h-full object-cover"
               />
