@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Hamza Yazough | Full-Stack Engineer & AI Tinkerer",
+  title: "Hamza Yazough | Full-Stack Engineer & AI Enthusiast",
   description:
     "Software engineering student at Polytechnique Montréal specializing in AI-powered applications. Experience at Coveo and Beneva, hackathon finalist.",
   keywords: [
@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://hamzayazough.dev",
-    title: "Hamza Yazough | Full-Stack Engineer & AI Tinkerer",
+    title: "Hamza Yazough | Full-Stack Engineer & AI Enthusiast",
     description: "Software engineering student at Polytechnique Montréal specializing in AI-powered applications.",
     siteName: "Hamza Yazough Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hamza Yazough | Full-Stack Engineer & AI Tinkerer",
+    title: "Hamza Yazough | Full-Stack Engineer & AI Enthusiast",
     description: "Software engineering student at Polytechnique Montréal specializing in AI-powered applications.",
   },
   robots: {

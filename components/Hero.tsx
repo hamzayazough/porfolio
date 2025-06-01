@@ -148,7 +148,7 @@ export default function Hero() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="hero-title text-6xl md:text-8xl font-bold mb-6 text-white drop-shadow-2xl">Hamza Yazough</h1>
           <h2 className="hero-subtitle text-2xl md:text-4xl font-medium mb-8 text-blue-200 drop-shadow-lg">
-            Full-Stack Engineer & AI Tinkerer
+            Full-Stack Engineer & AI Enthusiast
           </h2>
           <button
             onClick={scrollToAbout}

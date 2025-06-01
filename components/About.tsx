@@ -6,7 +6,7 @@ import { gsap } from "gsap"
 
 const profileData = {
   name: "Hamza Yazough",
-  title: "Full-Stack Engineer & AI tinkerer",
+  title: "Full-Stack Engineer & AI Enthusiast",
   email: "hamza.yazough1992@gmail.com",
   phone: "+1 581-337-8450",
   location: "Montréal, QC, Canada",
